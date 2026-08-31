@@ -1,0 +1,49 @@
+# ---- ROS 2 / colcon ----
+build/
+install/
+log/
+*.pyc
+__pycache__/
+
+# ---- Gazebo / rosbag (large, excluded) ----
+*.bag
+*.db3
+*.mcap
+rosbag2_*/
+
+# ---- Large data / logs (keep only small sample CSVs tracked manually) ----
+results/raw/
+results/*.csv
+!results/sample/*.csv
+
+# ---- Images / large binaries ----
+*.png
+!figures/*.png
+!src/my_config/maps/*.png
+*.pgm
+!src/my_config/maps/*.pgm
+
+# ---- Python ----
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---- LaTeX (if thesis source is included) ----
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+
+# ---- OS / editor ----
+.DS_Store
+.vscode/
+.idea/
+*.swp
